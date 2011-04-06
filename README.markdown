@@ -31,7 +31,7 @@ The FirePHPBundle provides simple integration FirePHP for your Symfony2 project.
 
 	// ...
 
-	fire_php.config: ~
+	fire_php: ~
 
 
 ## Usage
