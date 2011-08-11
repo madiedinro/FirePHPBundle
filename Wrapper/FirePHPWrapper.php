@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundle\FirePHPBundle\Wrapper;
+namespace FirePHPBundle\Wrapper;
 
 require_once __DIR__ . '/../FirePHPCore/FirePHP.class.php';
 

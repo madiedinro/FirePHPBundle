@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundle\FirePHPBundle\DependencyInjection;
+namespace FirePHPBundle\DependencyInjection;
 
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
