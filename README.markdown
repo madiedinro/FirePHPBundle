@@ -8,7 +8,17 @@ The FirePHPBundle provides simple integration FirePHP for your Symfony2 project.
 
 ### Add FirePHPBundle to your src/Bundle dir
 
-    git submodule add git://github.com/madiedinro/FirePHPBundle.git src/Bundle/FirePHPBundle
+#### Use deps file
+Add the following lines to de /deps file
+
+    ; Debugging
+    [FirePHPBundle]
+        git=git://github.com/Jehu/FirePHPBundle.git
+        target=/bundles/FirePHPBundle
+
+#### Use submodule
+
+    git submodule add git://github.com/Jehu/FirePHPBundle.git vendor/bundles/FirePHPBundle
 
 ### Add FirePHPBundle to your application kernel
 
@@ -17,11 +27,12 @@ The FirePHPBundle provides simple integration FirePHP for your Symfony2 project.
     {
 
 		// ...
-		if ($this->isDebug())
+		if (in_array($this->getEnvironment(), array('dev', 'test')) || (strpos($this->getEnvironment(), 'dev_') === 0)) {
 		{
 			// ...
-			$bundles[] = new Bundle\FirePHPBundle\FirePHPBundle();
+			$bundles[] = new FirePHPBundle\FirePHPBundle();
 		}
+
 		return $bundles;
     }
 
