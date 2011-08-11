@@ -6,7 +6,7 @@ The FirePHPBundle provides simple integration FirePHP for your Symfony2 project.
 
 ## Installation
 
-### Add FirePHPBundle to your src/Bundle dir
+### Add FirePHPBundle to your vendor/bundles dir
 
 #### Use deps file
 Add the following lines to de /deps file
