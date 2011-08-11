@@ -36,6 +36,17 @@ Add the following lines to de /deps file
 		return $bundles;
     }
 
+
+### Add FireBugBundle to your autoload.php
+
+    // app/autoload.php
+    $loader = new UniversalClassLoader();
+    $loader->registerNamespaces(array(
+        // ...
+        'FirePHP'          => __DIR__.'/../vendor/bundles',
+    ));
+
+
 ### Add FirePHPBundle to your application config
 
     // app/config/config.yml
