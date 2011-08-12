@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundle\FirePHPBundle;
+namespace FirePHPBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle as BaseBundle;
 
